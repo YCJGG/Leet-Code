@@ -36,14 +36,14 @@ class Solution(object):
         """
         num_dict = {}
 
-        for index, value in enumerate(nums):
 
-            for i, num in enumerate(nums):
-                if num in num_dict:
-                    return [num_dict[num], i]
-                else:
-                    num_dict[target- num] = i
-    # 44ms 77.07%
+
+        for i, num in enumerate(nums):
+            if num in num_dict:
+                return [num_dict[num], i]
+            else:
+                num_dict[target- num] = i
+    # 40ms 86.37%
 
 
 
